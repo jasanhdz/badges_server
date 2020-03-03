@@ -1,0 +1,20 @@
+{
+  "name": "badges_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jasan Hernández <jasan814@gmail.com> (https://twitter.com/jasan_azael)",
+  "license": "MIT",
+  "dependencies": {
+    "@now/node": "^1.4.1",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.4"
+  }
+}
