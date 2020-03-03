@@ -10,6 +10,8 @@
   "author": "Jasan Hernández <jasan814@gmail.com> (https://twitter.com/jasan_azael)",
   "license": "MIT",
   "dependencies": {
+    "@hapi/boom": "^9.0.0",
+    "@hapi/joi": "^17.1.0",
     "@now/node": "^1.4.1",
     "axios": "^0.19.2",
     "cors": "^2.8.5",
