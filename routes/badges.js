@@ -8,7 +8,7 @@ const {
   updateBadgeSchema
 } = require("../utils/schemas/badges");
 
-const validationHandler = require("../utils/middleware/errorHandler");
+const validationHandler = require("../utils/middleware/validationHandler");
 const cacheResponse = require("../utils/cacheResponse");
 const {
   FIVE_MINUTES_IN_SECONDS,
