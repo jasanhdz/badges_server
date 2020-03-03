@@ -12,8 +12,8 @@ class BadgesServices {
     return badges || [];
   }
 
-  async getBadge({ movieId }) {
-    const badge = await this.mongoDB.get(this.collection, movieId);
+  async getBadge({ badgeId }) {
+    const badge = await this.mongoDB.get(this.collection, badgeId);
     return badge || [];
   }
 

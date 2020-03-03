@@ -37,7 +37,7 @@ function badgeApi(app) {
 
   router.get(
     "/:badgeId",
-    validationHandler(join.object({ bageId: badgeIdSchema }), "params"),
+    validationHandler(join.object({ badgeId: badgeIdSchema }), "params"),
     async function(req, res, next) {
       cacheResponse(res, SIXTY_MINUTES_IN_SECONDS);
       const { badgeId } = req.params;
@@ -73,8 +73,8 @@ function badgeApi(app) {
 
   // PUT - Upadeted
   router.put(
-    "/badgeId",
-    validationHandler(join.object({ badgeId: badgeIdSchema })),
+    "/:badgeId",
+    validationHandler(join.object({ badgeId: badgeIdSchema }), "params"),
     validationHandler(join.object(updateBadgeSchema)),
     async function(req, res, next) {
       const { badgeId } = req.params;
@@ -96,8 +96,8 @@ function badgeApi(app) {
 
   // delete
   router.delete(
-    "/deleteId",
-    validationHandler(join.object({ badgeId: badgeIdSchema })),
+    "/:badgeId",
+    validationHandler(join.object({ badgeId: badgeIdSchema }), "params"),
     async function(req, res, next) {
       const { badgeId } = req.params;
       try {
