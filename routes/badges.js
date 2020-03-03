@@ -25,7 +25,7 @@ function badgeApi(app) {
     cacheResponse(res, FIVE_MINUTES_IN_SECONDS);
     const { tags } = req.query;
     try {
-      const badges = await badgeService.getBadge({ tags });
+      const badges = await badgeService.getBadges({ tags });
       res.status(200).json({
         data: badges,
         massage: "Badges listed"
